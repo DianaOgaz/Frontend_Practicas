@@ -1,8 +1,36 @@
-
-.navBar{
-    font-size: 5cm;
+/*Comenzaremos por el header que será 
+la barra de navegación*/
+.navBarTitle {
+    color: rgb(217, 169, 9);
+    -webkit-text-stroke: 1px black;
+    /*le agrega borde al texto*/
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-.navBarTitle{
-    font-size: 5cm;
+
+.navBarItems {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-color: #333;
+}
+
+li a {
+    color: whitesmoke;
+    background-color: #333;
+}
+
+.navBar {
+    position: fixed;
+    /*Hace que la posicion de esta wea este siempre a la vista incluso si se scrulea*/
+
+}
+
+* {
+    /*edita todo*/
+    background-color: gray;
 }
