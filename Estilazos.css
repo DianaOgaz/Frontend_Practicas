@@ -6,8 +6,6 @@ nav{ /*bloque de navegación*/
     padding-right: 10px;
     z-index: 99;
     
-   
-    
 }
 
 .navBar {/*header*/
@@ -23,11 +21,19 @@ nav{ /*bloque de navegación*/
 .navBarTitle { /*El titulo de la página*/
     z-index: 100;
     top: 0;
-    width: 300px;
+    width: 170px;
     margin: 0;
     color: #cc9900;
     padding-left: 20px;
-    
+
+}
+.navBarTitleS{ /*El titulo de la pagina parte 2*/
+    z-index: 100;
+    top: 0;
+    width: 60px;
+    margin: 0;
+    padding-top: 15px;
+    color: gray;
 
 }
 
