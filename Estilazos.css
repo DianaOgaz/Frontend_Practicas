@@ -1,26 +1,34 @@
 /*---------------------------------------Barra de navegación---------------------------------------*/
-nav{ /*bloque de navegación*/
+nav {
+    /*bloque de navegación*/
     position: sticky;
     width: 100%;
-    display: flex; /*establece que siempre se vea el componente */
-    justify-content: flex-end; /*muestra el contenido acomodado horizontalmente*/
+    display: flex;
+    /*establece que siempre se vea el componente */
+    justify-content: flex-end;
+    /*muestra el contenido acomodado horizontalmente*/
     align-items: center;
     padding-right: 10px;
     z-index: 99;
 
 }
 
-.navBar {/*header*/
-    position: sticky; 
-    display: flex; /*Siempre se muestra en la vista del usuario*/
-    top: 0; /*coloca el header al tope*/
-    width: 100%; /* establece el ancho del header */
+.navBar {
+    /*header*/
+    position: sticky;
+    display: flex;
+    /*Siempre se muestra en la vista del usuario*/
+    top: 0;
+    /*coloca el header al tope*/
+    width: 100%;
+    /* establece el ancho del header */
     height: 70px;
     background: rgb(100, 100, 100);
 
 }
 
-.navBarTitle { /*El titulo de la página*/
+.navBarTitle {
+    /*El titulo de la página*/
     z-index: 100;
     top: 0;
     width: 170px;
@@ -30,7 +38,8 @@ nav{ /*bloque de navegación*/
 
 }
 
-.navBarTitleS{ /*El titulo de la pagina parte 2*/
+.navBarTitleS {
+    /*El titulo de la pagina parte 2*/
     z-index: 100;
     top: 0;
     width: 60px;
@@ -40,7 +49,8 @@ nav{ /*bloque de navegación*/
 
 }
 
-.navBarItems{ /*lista de items*/
+.navBarItems {
+    /*lista de items*/
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -50,74 +60,99 @@ nav{ /*bloque de navegación*/
 
 }
 
-.navBarItem{ /*items individuales*/
-    width: 100%; 
+.navBarItem {
+    /*items individuales*/
+    width: 100%;
     height: 100%;
-    
+
 }
 
-.navBarItem:hover{ /*accion al colocar el mouse encima*/
+.navBarItem:hover {
+    /*accion al colocar el mouse encima*/
     background-color: rgb(41, 41, 41);
 
 }
 
-a{ /*Texto de items*/
-    font-family:'Times New Roman', Times, serif;
+a {
+    /*Texto de items*/
+    font-family: 'Times New Roman', Times, serif;
     font-size: large;
     color: antiquewhite;
     display: block;
     padding: 32px;
     text-decoration: none;
-    
+
 }
+
 /*---------------------------------------cuerpo de página----------------------------------------------*/
-body{/*cuerpo de página*/
+body {
+    /*cuerpo de página*/
     background-color: rgb(214, 214, 214);
     /*font-family:'Times New Roman', Times, serif ;*/
     font-family: 'Cinzel', serif;
 
 }
 
-.pagina{ /*da formato a la página*/
-padding: 100px; /*le agrega un margensito a toda la página*/
+.pagina {
+    /*da formato a la página*/
+    padding: 100px;
+    /*le agrega un margensito a toda la página*/
 
 }
 
-.ConocenosTitulo{ /*titulo de conocenos */
-    border-bottom-style: groove;
-    border-width: 5px;
-    
-}
-
-td{ /*Contenido de tabla*/
-   border-left-style: groove;
-   border-spacing: 5px;
-   padding: 20px;
-
-}
-
-.procesos{ /*titulo de procesos*/
+.ConocenosTitulo {
+    /*titulo de conocenos */
     border-bottom-style: groove;
     border-width: 5px;
 
 }
 
-.listaTitulo{ /*Titulos de la lista de procesos*/
-font-family: bold;
+td {
+    /*Contenido de tabla*/
+    border-left-style: groove;
+    border-spacing: 5px;
+    padding: 20px;
 
 }
-.correo{
+
+.procesos {
+    /*titulo de procesos*/
+    border-bottom-style: groove;
+    border-width: 5px;
+
+}
+
+.listaTitulo {
+    /*Titulos de la lista de procesos*/
+    font-family: bold;
+
+}
+
+.correo {
     color: black;
 }
 
-/*------------------------------Bode de página web --------------------------------*/
-footer{
-    background-color: rgb(100,100,100);
+/*------------------------------Footer de página web --------------------------------*/
+footer {
+    background-color: rgb(100, 100, 100);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    bottom: 0;
 
 }
-.footerTitulo{
-    align-items: center;
 
+.footerTitulo {
+    color: antiquewhite;
+     width: max-content;
+     margin: 0;
+     padding: 0;
+     margin-left: 50%;
+     padding-top: 25px;
 }
-
-
+.footerAño{
+    width: max-content;
+    color: antiquewhite;
+    margin-left: 5%;
+    
+}
