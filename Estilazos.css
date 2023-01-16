@@ -71,7 +71,7 @@ a{ /*Texto de items*/
     
 }
 /*---------------------------------------cuerpo de página----------------------------------------------*/
-body{/*cuerpo de máquina*/
+body{/*cuerpo de página*/
     background-color: rgb(214, 214, 214);
     /*font-family:'Times New Roman', Times, serif ;*/
     font-family: 'Cinzel', serif;
@@ -89,11 +89,10 @@ padding: 100px; /*le agrega un margensito a toda la página*/
     
 }
 
-td{
+td{ /*Contenido de tabla*/
    border-left-style: groove;
    border-spacing: 5px;
    padding: 20px;
-
 
 }
 
@@ -103,5 +102,22 @@ td{
 
 }
 
+.listaTitulo{ /*Titulos de la lista de procesos*/
+font-family: bold;
+
+}
+.correo{
+    color: black;
+}
+
+/*------------------------------Bode de página web --------------------------------*/
+footer{
+    background-color: rgb(100,100,100);
+
+}
+.footerTitulo{
+    align-items: center;
+
+}
 
 
