@@ -106,6 +106,12 @@ body {
     border-width: 5px;
 
 }
+.mapa{/*Mapa donde se coloca la ubicacion */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
 
 td {
     /*Contenido de tabla*/
@@ -142,17 +148,17 @@ footer {
 
 }
 
-.footerTitulo {
+.footerTitulo { /*estilizado de contenido footer*/
     color: antiquewhite;
      width: max-content;
      margin: 0;
      padding: 0;
-     margin-left: 50%;
+     margin-left: 50%; /*coloca margen */
      padding-top: 25px;
 }
-.footerAño{
+.footerAño{ /*estilizado de footer*/
     width: max-content;
-    color: antiquewhite;
+    color: antiquewhite; /*color de texto*/
     margin-left: 5%;
     
 }
