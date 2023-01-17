@@ -23,14 +23,14 @@ nav {
 
 .navBar {
     /*header*/
-    position: sticky;
+    position: fixed; /*Hace que la barrita se ajuste al ancho de la ventana del navegador*/
     display: flex;
     /*Siempre se muestra en la vista del usuario*/
     top: 0;
     /*coloca el header al tope*/
-    width: 100%;
+    width: 100% + 100px;
     /* establece el ancho del header */
-    height: 5%;
+    height: 2cm;
     background: rgb(100, 100, 100);
 
 }
@@ -39,11 +39,11 @@ nav {
 .navBarTitle {
     /*El titulo de la página*/
     z-index: 100;
-    top: 0;
     width: 100%;
-    margin: 0;
+    margin: 10px;
     color: #e9be3e;
     padding-left: 20px;
+    padding-right: 20px;
 
 }
 
@@ -103,13 +103,6 @@ body {
     font-family: 'Cinzel', serif;
 }
 
-.pagina {
-    /*colocar margen de página*/
-    padding: 5%;
-    /*al colocarlo la pagina se hace ancha*/
-
-}
-
 .ConocenosTitulo {
     /*titulo de conocenos */
     border-bottom-style: groove;
@@ -157,12 +150,13 @@ div{
     width: 100%;
 }
 
+p{
+    width: 100%;
+}
 /*------------------------------Footer de página web --------------------------------*/
 footer {
+    width: 100%;
     background-color: rgb(100, 100, 100);
-    margin: 0;
-    padding: 0;
-    padding-bottom: 25px;
     bottom: 0;
     height: 70px;
 
@@ -174,10 +168,10 @@ footer {
     width: max-content;/*se establece el contenido máximo */
     margin: 0;
     padding: 0;
-    margin-left: 40%;
-    
     /*coloca margen */
     padding-top: 25px;
+    padding-left: 10px;
+
 }
 
 .footerAño {
