@@ -163,12 +163,27 @@ td {
 li {
     list-style: none;
 }
-.formCorreo{
+.sForm{
+    display: block;
+}
+
+.divForm {
+
+    width: 400px;
+    height: 700px;
+    box-sizing: inherit;
+    
+}
+
+.formCorreo {
     position: static;
     background-color: darkcyan;
     padding: 10%;
     margin: 0;
-
+    
+}
+lavel{
+    
 }
 
 /*-------------------------------------Footer de página web -------------------------------------*/
