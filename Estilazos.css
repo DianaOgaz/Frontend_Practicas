@@ -171,13 +171,14 @@ td {
 
 }
 
-li {
+li { /*Tipo de lista*/
     list-style: none;
 }
+/*---------------------------- Form correo -------------------*/
 
-.sForm {
-    box-sizing: border-box;
+.sForm {/*Seccion de form*/
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
 }
 
@@ -188,9 +189,9 @@ li {
     padding: 30px;
     background-color: var(--principal);
     box-sizing: border-box;
+    bottom: 0;
 
 }
-
 
 /*-------------------------------------Footer de página web -------------------------------------*/
 footer {
