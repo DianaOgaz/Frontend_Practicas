@@ -1,7 +1,19 @@
+/*Variables*/
+nav{
+    --fondo: rgb(100, 100, 100);
+    --items: antiquewhite;
+    --principal:  rgba(212, 221, 84, 0.836);
+}
+body{
+    --fondo: rgb(214, 214, 214);
+
+}
+
+
 /*---------------------------------------Barra de navegación---------------------------------------*/
 header {
     width: 100%;
-    background-color: rgb(100, 100, 100);
+    background-color: --fondo;
 
 }
 
@@ -163,28 +175,21 @@ td {
 li {
     list-style: none;
 }
-.sForm{
-    display: block;
+
+.form{
+    box-sizing: border-box;
+width: 100%;
 }
 
-.divForm {
-
+.form__goup { /*Form para el correo electrónico*/
     width: 400px;
     height: 700px;
-    box-sizing: inherit;
+    padding: 30px;
+    background-color: rgba(212, 221, 84, 0.836);
+    box-sizing: border-box;
     
 }
 
-.formCorreo {
-    position: static;
-    background-color: darkcyan;
-    padding: 10%;
-    margin: 0;
-    
-}
-lavel{
-    
-}
 
 /*-------------------------------------Footer de página web -------------------------------------*/
 footer {
