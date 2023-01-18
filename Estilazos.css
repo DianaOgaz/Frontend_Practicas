@@ -184,7 +184,8 @@ li {
     /*se guardan los componentes dentro de una malla (filas y columnas)*/
     grid-template-columns: repeat(2, 1fr);
     /*Esta wea espesifica el numero de columnas y el tamaño de estas*/
-
+    padding: 20px;
+    
 }
 
 .form__goup {
