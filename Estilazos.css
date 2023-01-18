@@ -1,14 +1,13 @@
-/*Variables*/
-nav{
-    --fondo: rgb(100, 100, 100);
+/*Variables globales*/
+:root {
+    /*Colores*/
+    --fondoNav: rgb(100, 100, 100);
+    --fondoNavH: rgb(41, 41, 41);
     --items: antiquewhite;
-    --principal:  rgba(212, 221, 84, 0.836);
-}
-body{
-    --fondo: rgb(214, 214, 214);
+    --principal: #e9be3e;
+    --fondoPag: rgb(214, 214, 214);
 
 }
-
 
 /*---------------------------------------Barra de navegación---------------------------------------*/
 header {
@@ -43,7 +42,7 @@ nav {
     width: 100% + 100px;
     /* establece el ancho del header */
     height: 2cm;
-    background: rgb(100, 100, 100);
+    background: var(--fondoNav);
 
 }
 
@@ -53,7 +52,7 @@ nav {
     z-index: 100;
     width: 100%;
     margin: 10px;
-    color: #e9be3e;
+    color: var(--principal);
     margin: 0;
 
 }
@@ -92,7 +91,7 @@ nav {
 
 .navBarItem:hover {
     /*accion al colocar el mouse encima*/
-    background-color: rgb(41, 41, 41);
+    background-color:var(--fondoNavH);
     color: antiquewhite;
 
 }
@@ -176,18 +175,20 @@ li {
     list-style: none;
 }
 
-.form{
+.sForm {
     box-sizing: border-box;
-width: 100%;
+    display: grid;
+
 }
 
-.form__goup { /*Form para el correo electrónico*/
+.form__goup {
+    /*Form para el correo electrónico*/
     width: 400px;
     height: 700px;
     padding: 30px;
-    background-color: rgba(212, 221, 84, 0.836);
+    background-color: var(--principal);
     box-sizing: border-box;
-    
+
 }
 
 
