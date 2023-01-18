@@ -91,7 +91,7 @@ nav {
 
 .navBarItem:hover {
     /*accion al colocar el mouse encima*/
-    background-color:var(--fondoNavH);
+    background-color: var(--fondoNavH);
     color: antiquewhite;
 
 }
@@ -171,33 +171,38 @@ td {
 
 }
 
-li { /*Tipo de lista*/
+li {
+    /*Tipo de lista*/
     list-style: none;
 }
+
 /*---------------------------- Form correo -------------------*/
 
-.sForm {/*Seccion de form*/
+.sForm {
+    /*Seccion de form*/
     display: grid;
+    /*se guardan los componentes dentro de una malla (filas y columnas)*/
     grid-template-columns: repeat(2, 1fr);
+    /*Esta wea espesifica el numero de columnas y el tamaño de estas*/
 
 }
 
 .form__goup {
     /*Form para el correo electrónico*/
     width: 400px;
-    height: 700px;
-    padding: 30px;
+    height: 570px;
+    padding: 20px;
     background-color: var(--principal);
-    box-sizing: border-box;
     bottom: 0;
-
+    
 }
 
 /*-------------------------------------Footer de página web -------------------------------------*/
 footer {
+    display: grid;
     background-color: rgb(100, 100, 100);
     width: 100%;
-    bottom: 0;
+    height: 120px;
 
 }
 
