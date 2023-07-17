@@ -1,0 +1,13 @@
+.navbar{
+    background-color:#84a7d6;
+}
+.logo{
+    max-height:100px; /*Alto*/
+    max-width:400px; /*Ancho*/
+}
+.body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
