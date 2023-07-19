@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Esta estiqueta permite que la página sea responsiva-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Promessa</title>
+
   <!-- Se añade el link de los estilos, se usará boostrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,6 +15,9 @@
   <!--Espacio para links de estilos-->
   <link href="estilazos.css" rel="stylesheet">
   <link href="navbar.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
 </head>
 
@@ -20,7 +25,7 @@
 
   <!--Implementacion de barra de navegación------------------------------------------------>
 
-  <nav class="navbar navbar-expand-lg d-flex justify-content-end" aria-label="Tenth navbar example">
+  <nav class="navbar navbar-expand-lg d-flex justify-content-end sticky-top" aria-label="Tenth navbar example">
     <div class="container-fluid">
       <div class="collapse navbar-collapse d-md-flex justify-content-md-start" id="navbarsExample08">
         <img class="logo" src="images/promessa_navbar.png" alt="logo">
@@ -35,46 +40,42 @@
   </nav>
 
   <!--Implementacion de carrusel------------------------------------------------------------->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel slide" data-bs-ride="carousel"> <!--Coloca la animacion del carrusel-->
+
+    <!--Barrita de indicadores del carrusel-->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
 
-        <div class="container">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active text-center"> <!--Imagen del carrusel-->
+        <img class="images-carousel d-inline-block img-fluid" src="images/cat1.jpg" alt="cato">
+
+        <div class="container"> <!--Texto del carrusel-->
           <div class="carousel-caption text-start">
             <h1>Example headline.</h1>
             <p>Some representative placeholder content for the first slide of the carousel.</p>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
+
+      <div class="carousel-item text-center"> <!--Imagen del carrusel-->
+        <img class="images-carousel d-inline-block img-fluid " src="images/cat2.jpg" alt="cato">
 
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
-
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
+
+      <div class="carousel-item text-center"> <!--Imagen del carrusel-->
+        <img class="images-carousel d-inline-block img-fluid" src="images/cat3.jpg" alt="cato">
 
         <div class="container">
           <div class="carousel-caption text-end">
@@ -84,15 +85,100 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
+  </div> <!--Fin carrusel-->
+
+  <br>
+
+  <!--Se agregó grid para Mision, Vision y Giro--------------------------------------------------------------------------------->
+  <div class="grid-container text-center">
+    <div class="grid-item"><i id="icono" class="fi fi-ss-plus"></i></div>
+    <div class="grid-item"><i id="icono" class="fi fi-rr-eye"></i></div>
+    <div class="grid-item"><i id="icono" class="fi fi-rr-refresh"></i></div>
+    <div class="grid-item">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolorem sit quisquam est at,
+        voluptatem accusamus illum repudiandae, vitae explicabo quaerat, maxime illo. Repellat, unde officia voluptates
+        sint incidunt recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque magni iste repudiandae
+        assumenda tempora odio mollitia doloribus aut corrupti blanditiis. Dignissimos deleniti accusantium animi, fuga
+        sequi commodi laboriosam provident laborum.</p>
+    </div>
+    <div class="grid-item">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a magni, fuga fugiat eaque
+        odit possimus earum ipsam distinctio, molestiae iure. Tempore vero, facilis enim odio iusto cumque molestias
+        harum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, fugiat. Consequatur, quia porro
+        quasi,
+        nesciunt quidem enim eligendi pariatur eveniet qui eaque reiciendis incidunt, eos temporibus non dolorum
+        doloribus
+        aspernatur!</p>
+    </div>
+    <div class="grid-item">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ea ad illum sit. Cumque, ex
+        libero nostrum suscipit, accusamus beatae obcaecati eligendi assumenda voluptas, unde odit. Magnam veniam Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Magni, dignissimos quibusdam. Quod amet, vitae fugiat quos
+        perspiciatis nisi porro illo soluta quas dolor itaque voluptate expedita a dolore distinctio assumenda?
+        inventore nostrum.</p>
+    </div>
   </div>
+
+  <!-- Grid para Objetivos -->
+  <div class="grid-container-objetive">
+    <div class="row">
+      <div class="grid-item col-8">
+        <img class="images-carousel d-inline-block img-fluid " src="images/cat2.jpg" alt="cato">
+      </div>
+
+      <div class="grid-item col-4">
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti iusto
+          aliquid asperiores magnam fugiat, officia earum rem minus quia explicabo doloribus accusantium laboriosam
+          expedita porro. Provident sequi quidem temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Porro quia voluptatem saepe ex voluptas accusamus recusandae maiores, consequuntur quasi nostrum beatae fuga
+          ab
+          earum reprehenderit quod necessitatibus adipisci aspernatur deleniti.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid para Servicios -->
+  <div class="grid-container-services">
+    <div class="row">
+      <div class="grid-item col-4">
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, vel. Sunt atque, deserunt
+          commodi optio in quisquam! Quibusdam expedita, aliquid saepe obcaecati similique, exercitationem unde mollitia
+          sint cum, quam aliquam.</p>
+      </div>
+      <div class="grid-item col-8">
+        <img class="images-carousel d-inline-block img-fluid" src="images/cat3.jpg" alt="cato">
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid Formulario-->
+  <div class="grid-container-form">
+    <div class="row">
+      <div class="grid-item col-8">
+        <img class="images-carousel d-inline-block img-fluid " src="images/cat2.jpg" alt="cato">
+      </div>
+
+      <div class="grid-item col-4">
+        <form action="">
+          <label class="form-label">Nombre</label> 
+          <input class="form-control" type="text"><br>
+          <label>Correo</label>
+          <input class="form-control" type="text"><br>
+          <label>Asunto</label>
+          <input class="form-control" type="text"><br>
+          <label>Descripción</label><br>
+          <input class="form-control" type="text"><br>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+
 
 
   <!--Script necesario para el uso de boostrap-->
