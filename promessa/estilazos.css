@@ -1,10 +1,15 @@
+/*---------------------------General-----------------------------*/
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
 /*----------------------------Navbar-----------------------------*/
 .navbar {
-    background-color: #84a7d6;
+    background-color: #c5c5c5;
 }
 
 .logo {
-    max-height: 100px;
+    max-height: 90px;
     /*Alto*/
     max-width: 400px;
     /*Ancho*/
@@ -14,6 +19,7 @@
 /*----------------------carrusel-------------------------------*/
 .carousel {
     max-height: 800px;
+    background-color: rgb(103, 161, 236);
 }
 
 .images-carousel {
@@ -24,7 +30,7 @@
 }
 
 .carousel-caption {
-    color: rgb(122, 122, 122);
+    color: rgb(230, 230, 230);
 
 }
 

@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body id="section0">
 
   <!--Implementacion de barra de navegación------------------------------------------------>
 
@@ -33,10 +33,10 @@
         </div>
       </div>
       <ul class="navbar-nav d-grid gap-2 d-md-flex justify-content-md-end">
-        <li><button class="btn btn-light" type="button">Inicio</button></li>
-        <li><button class="btn btn-outline-light" type="button">Conocenos</button></li>
-        <li><button class="btn btn-outline-light" type="button">Servicios</button></li>
-        <li><button class="btn btn-outline-light" type="button">Contactanos</button></li>
+        <li><a href="#section0"><button class="btn btn-light" type="button">Inicio</button></a></li>
+        <li><a href="#section1"><button class="btn btn-outline-light" type="button">Conocenos</button></a></li>
+        <li><a href="#section2"><button class="btn btn-outline-light" type="button">Servicios</button></a></li>
+        <li><a href="#section3"><button class="btn btn-outline-light" type="button">Contactanos</button></a></li>
       </ul>
     </div>
   </nav>
@@ -45,7 +45,7 @@
   <div id="carousel" class="carousel slide" data-bs-ride="carousel"> <!--Coloca la animacion del carrusel-->
 
     <!--Barrita de indicadores del carrusel-->
-    <div class="carousel-indicators">
+    <div class="carousel-indicators" >
       <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -54,7 +54,7 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active text-center"> <!--Imagen del carrusel-->
-        <img class="images-carousel d-inline-block img-fluid" src="images/cat1.jpg" alt="cato">
+        <img class="images-carousel d-inline-block img-fluid" src="images/cato1.jpg" alt="cato">
 
         <div class="container"> <!--Texto del carrusel-->
           <div class="carousel-caption text-start">
@@ -65,7 +65,7 @@
       </div>
 
       <div class="carousel-item text-center"> <!--Imagen del carrusel-->
-        <img class="images-carousel d-inline-block img-fluid " src="images/cat2.jpg" alt="cato">
+        <img class="images-carousel d-inline-block img-fluid " src="images/cato2.jpg" alt="cato">
 
         <div class="container">
           <div class="carousel-caption">
@@ -76,7 +76,7 @@
       </div>
 
       <div class="carousel-item text-center"> <!--Imagen del carrusel-->
-        <img class="images-carousel d-inline-block img-fluid" src="images/cat3.jpg" alt="cato">
+        <img class="images-carousel d-inline-block img-fluid" src="images/cato3.jpg" alt="cato">
 
         <div class="container">
           <div class="carousel-caption text-end">
@@ -89,10 +89,8 @@
 
   </div> <!--Fin carrusel-->
 
-  <br>
-
   <!--Se agregó grid para Mision, Vision y Giro--------------------------------------------------------------------------------->
-  <div class="grid-container text-center">
+  <div class="grid-container text-center" ">
     <div class="grid-item"><i id="icono" class="fi fi-ss-plus"></i></div>
     <div class="grid-item"><i id="icono" class="fi fi-rr-eye"></i></div>
     <div class="grid-item"><i id="icono" class="fi fi-rr-refresh"></i></div>
@@ -123,14 +121,14 @@
   </div>
 
   <!-- Grid para Objetivos -->
-  <div class="grid-container-objetive">
+  <div class="grid-container-objetive" id="section1">
     <div class="row">
       <div class="grid-item col-8">
         <img class="grid-image  " src="images/cat2.jpg" alt="cato">
       </div>
 
       <div class="grid-item col-4">
-        <section class="grid-text text-center">
+        <section class="grid-text text-center" >
           <h1 class="mb-5">Objetivos</h1>
           <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti iusto
             aliquid asperiores magnam fugiat, officia earum rem minus quia explicabo doloribus accusantium laboriosam
@@ -162,10 +160,10 @@
   </div>
 
   <!-- Grid para Servicios -->
-  <div class="grid-container-services">
+  <div class="grid-container-services" id="section2">
     <div class="row">
       <div class="grid-item col-4 ">
-        <section class="grid-text text-center ">
+        <section class="grid-text text-center " >
           <h1 class="mb-5">Servicios</h1>
           <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, vel. Sunt atque,
             deserunt
@@ -182,7 +180,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae molestiae explicabo nesciunt
                 repellat quaerat saepe placeat porro possimus repudiandae inventore tempora maxime vel ut sapiente, quo
                 ullam officia aperiam.</p>
-            </li>
+            </li>o
             <li>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus officia, qui dolore cumque ea
                 quos ipsum tempora tenetur neque totam quae porro nostrum odio aut adipisci explicabo suscipit eos
@@ -206,7 +204,7 @@
       </div>
 
       <div class="grid-item-form col-4 grid-form">
-        <form class="card"> <!--Fomr para contacto-->
+        <form class="card" id="section3" > <!--Form para contacto-->
           <div class="card-body">
             <div class="mb-3">
               <label class="form-label">Nombre</label>
@@ -222,10 +220,10 @@
             </div>
             <div class="mb-3">
               <label "form-label">Descripción</label>
-              <input class="form-control" type="text">
+              <textarea rows="5" class="form-control" type="text"></textarea>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button class="btn btn-primary me-md-2" type="submit">Enviar</button>
+              <button class="btn btn-outline-primary me-md-2 btn-lg" type="submit">Enviar</button>
             </div>
 
           </div>
