@@ -28,7 +28,9 @@
   <nav class="navbar navbar-expand-lg d-flex justify-content-end sticky-top" aria-label="Tenth navbar example">
     <div class="container-fluid">
       <div class="collapse navbar-collapse d-md-flex justify-content-md-start" id="navbarsExample08">
-        <img class="logo" src="images/promessa_navbar.png" alt="logo">
+        <div class="logo-container">
+          <img class="logo" src="images/promessa_navbar.png" alt="logo">
+        </div>
       </div>
       <ul class="navbar-nav d-grid gap-2 d-md-flex justify-content-md-end">
         <li><button class="btn btn-light" type="button">Inicio</button></li>
@@ -40,18 +42,17 @@
   </nav>
 
   <!--Implementacion de carrusel------------------------------------------------------------->
-  <div class="carousel slide" data-bs-ride="carousel"> <!--Coloca la animacion del carrusel-->
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel"> <!--Coloca la animacion del carrusel-->
 
     <!--Barrita de indicadores del carrusel-->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
     <div class="carousel-inner">
-
       <div class="carousel-item active text-center"> <!--Imagen del carrusel-->
         <img class="images-carousel d-inline-block img-fluid" src="images/cat1.jpg" alt="cato">
 
@@ -96,14 +97,15 @@
     <div class="grid-item"><i id="icono" class="fi fi-rr-eye"></i></div>
     <div class="grid-item"><i id="icono" class="fi fi-rr-refresh"></i></div>
     <div class="grid-item">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolorem sit quisquam est at,
+      <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolorem sit quisquam est
+        at,
         voluptatem accusamus illum repudiandae, vitae explicabo quaerat, maxime illo. Repellat, unde officia voluptates
         sint incidunt recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque magni iste repudiandae
         assumenda tempora odio mollitia doloribus aut corrupti blanditiis. Dignissimos deleniti accusantium animi, fuga
         sequi commodi laboriosam provident laborum.</p>
     </div>
     <div class="grid-item">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a magni, fuga fugiat eaque
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a magni, fuga fugiat eaque
         odit possimus earum ipsam distinctio, molestiae iure. Tempore vero, facilis enim odio iusto cumque molestias
         harum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, fugiat. Consequatur, quia porro
         quasi,
@@ -112,7 +114,7 @@
         aspernatur!</p>
     </div>
     <div class="grid-item">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ea ad illum sit. Cumque, ex
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ea ad illum sit. Cumque, ex
         libero nostrum suscipit, accusamus beatae obcaecati eligendi assumenda voluptas, unde odit. Magnam veniam Lorem
         ipsum dolor sit amet consectetur adipisicing elit. Magni, dignissimos quibusdam. Quod amet, vitae fugiat quos
         perspiciatis nisi porro illo soluta quas dolor itaque voluptate expedita a dolore distinctio assumenda?
@@ -124,18 +126,35 @@
   <div class="grid-container-objetive">
     <div class="row">
       <div class="grid-item col-8">
-        <img class="images-carousel d-inline-block img-fluid grid-image" src="images/cat2.jpg" alt="cato">
+        <img class="grid-image  " src="images/cat2.jpg" alt="cato">
       </div>
 
       <div class="grid-item col-4">
-        <section class="grid-objetive">
-          <h1>Objetivos</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti iusto
+        <section class="grid-text text-center">
+          <h1 class="mb-5">Objetivos</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti iusto
             aliquid asperiores magnam fugiat, officia earum rem minus quia explicabo doloribus accusantium laboriosam
             expedita porro. Provident sequi quidem temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Porro quia voluptatem saepe ex voluptas accusamus recusandae maiores, consequuntur quasi nostrum beatae fuga
             ab
             earum reprehenderit quod necessitatibus adipisci aspernatur deleniti.</p>
+          <ul>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, error mollitia voluptate maxime
+                aliquid, est nihil adipisci laborum rem ratione saepe consequatur voluptas quibusdam magni deleniti
+                neque a officiis expedita?</p>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae molestiae explicabo nesciunt
+                repellat quaerat saepe placeat porro possimus repudiandae inventore tempora maxime vel ut sapiente, quo
+                ullam officia aperiam.</p>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus officia, qui dolore cumque ea
+                quos ipsum tempora tenetur neque totam quae porro nostrum odio aut adipisci explicabo suscipit eos
+                voluptas.F</p>
+            </li>
+          </ul>
         </section>
 
       </div>
@@ -145,14 +164,36 @@
   <!-- Grid para Servicios -->
   <div class="grid-container-services">
     <div class="row">
-      <div class="grid-item col-4 grid-services">
-        <h1>Servicios</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, vel. Sunt atque, deserunt
-          commodi optio in quisquam! Quibusdam expedita, aliquid saepe obcaecati similique, exercitationem unde mollitia
-          sint cuom, quam aliquam.</p>
+      <div class="grid-item col-4 ">
+        <section class="grid-text text-center ">
+          <h1 class="mb-5">Servicios</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, vel. Sunt atque,
+            deserunt
+            commodi optio in quisquam! Quibusdam expedita, aliquid saepe obcaecati similique, exercitationem unde
+            mollitia
+            sint cuom, quam aliquam.</p>
+          <ul>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, error mollitia voluptate maxime
+                aliquid, est nihil adipisci laborum rem ratione saepe consequatur voluptas quibusdam magni deleniti
+                neque a officiis expedita?</p>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae molestiae explicabo nesciunt
+                repellat quaerat saepe placeat porro possimus repudiandae inventore tempora maxime vel ut sapiente, quo
+                ullam officia aperiam.</p>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus officia, qui dolore cumque ea
+                quos ipsum tempora tenetur neque totam quae porro nostrum odio aut adipisci explicabo suscipit eos
+                voluptas.F</p>
+            </li>
+          </ul>
+        </section>
+
       </div>
       <div class="grid-item col-8">
-        <img class="images-carousel d-inline-block img-fluid grid-image" src="images/cat3.jpg" alt="cato">
+        <img class="grid-image" src="images/cat3.jpg" alt="cato">
       </div>
     </div>
   </div>
@@ -164,25 +205,30 @@
         <img class="images-carousel d-inline-block img-fluid grid-image " src="images/cat1.jpg" alt="cato">
       </div>
 
-      <div class="grid-item col-4 grid-form">
-        <form> <!--Fomr para contacto-->
-          <div class="mb-3">
-            <label class="form-label">Nombre</label>
-            <input class="form-control" type="text">
+      <div class="grid-item-form col-4 grid-form">
+        <form class="card"> <!--Fomr para contacto-->
+          <div class="card-body">
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="mb-3">
+              <label "form-label">Correo</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="mb-3">
+              <label "form-label">Asunto</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="mb-3">
+              <label "form-label">Descripción</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary me-md-2" type="submit">Enviar</button>
+            </div>
+
           </div>
-          <div class="mb-3">
-            <label "form-label">Correo</label>
-            <input class="form-control" type="text">
-          </div>
-          <div class="mb-3">
-            <label "form-label">Asunto</label>
-            <input class="form-control" type="text">
-          </div>
-          <div class="mb-3">
-            <label "form-label">Descripción</label>
-            <input class="form-control" type="text">
-          </div>
-          <button class="btn btn-primary" type="submit">Enviar</button>
         </form>
       </div>
 

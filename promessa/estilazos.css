@@ -1,4 +1,4 @@
-
+/*----------------------------Navbar-----------------------------*/
 .navbar {
     background-color: #84a7d6;
 }
@@ -11,6 +11,7 @@
 
 }
 
+/*----------------------carrusel-------------------------------*/
 .carousel {
     max-height: 800px;
 }
@@ -27,22 +28,13 @@
 
 }
 
+/*--------------------------------Grids---------------------------------*/
 .grid-container {
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     width: 80%;
     margin: 5% auto;
-
-}
-
-.grid-item {
-    text-align: center;
-}
-
-.grid-image {
-    width: auto;
 
 }
 
@@ -54,11 +46,15 @@
     margin: 5% auto;
 }
 
-.form-label {
-    justify-items: flex-end;
+.grid-image {
+    width: 80%;
 }
-
-.grid-objetive, .grid-services, .grid-form{
-    /*Que sea la mitad del largo de la imagen de al lado*/
-    text-align: center;
+.grid-item{
+    align-self: center; /*Acomoda verticalmente los elementos
+    */
+}
+/*------------------------------Form--------------------------------------*/
+.grid-item-form {
+    align-self: center;
+    /*Alinea verticalmente el componente*/
 }
