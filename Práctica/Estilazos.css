@@ -1,0 +1,238 @@
+/*Variables globales*/
+:root {
+    /*Colores*/
+    --fondoNav: rgb(100, 100, 100);
+    --fondoNavH: rgb(41, 41, 41);
+    --items: antiquewhite;
+    --principal: #e9be3e;
+    --fondoPag: rgb(214, 214, 214);
+
+}
+
+/*---------------------------------------Barra de navegación---------------------------------------*/
+header {
+    width: 100%;
+    background-color: --fondo;
+
+}
+
+nav {
+    /*bloque de navegación*/
+    position: sticky;
+    width: 100%;
+    display: flex;
+    /*tipo de renderizado de contenedor*/
+    /*establece que siempre se vea el componente */
+    justify-content: flex-end;
+    /*muestra el contenido acomodado horizontalmente*/
+    align-items: center;
+    padding-right: 10px;
+    z-index: 99;
+
+}
+
+.navBar {
+    /*header*/
+    position: fixed;
+    /*Hace que la barrita se ajuste al ancho de la ventana del navegador*/
+    display: flex;
+    /*Siempre se muestra en la vista del usuario*/
+    top: 0;
+    /*coloca el header al tope*/
+    width: 100% + 100px;
+    /* establece el ancho del header */
+    height: 2cm;
+    background: var(--fondoNav);
+
+}
+
+
+.navBarTitle {
+    /*El titulo de la página*/
+    z-index: 100;
+    width: 100%;
+    margin: 10px;
+    color: var(--principal);
+    margin: 0;
+
+}
+
+.navBarTitleS {
+    /*El titulo de la pagina parte 2*/
+    z-index: 100;
+    top: 0;
+    width: 60px;
+    margin: 0;
+    padding-top: 25px;
+    color: rgb(168, 168, 168);
+    
+
+}
+
+.navBarItems {
+    /*lista de items*/
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    z-index: 101;
+
+}
+
+.navBarItem {
+    /*items individuales*/
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    color: antiquewhite;
+    
+
+}
+
+.navBarItem:hover {
+    /*accion al colocar el mouse encima*/
+    background-color: var(--fondoNavH);
+    color: antiquewhite;
+
+}
+
+a {
+    /*Texto de items*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: antiquewhite;
+    display: block;
+    padding: 32px;
+    text-decoration: none;
+
+}
+
+/*---------------------------------------cuerpo de página----------------------------------------------*/
+body {
+    width: 100%;
+    padding-top: 100px;
+    /*cuerpo de página*/
+    background-color: rgb(214, 214, 214);
+    /*font-family:'Times New Roman', Times, serif ;*/
+    font-family: 'Cinzel', serif;
+
+}
+
+p {
+    padding: 20px;
+}
+
+h2{
+    padding: 20px;
+}
+
+.ConocenosTitulo {
+    /*titulo de conocenos */
+    border-bottom-style: groove;
+    border-width: 5px;
+
+}
+
+.mapa {
+    /*Mapa donde se coloca la ubicacion */
+    padding: 0;
+    margin: 0;
+    float: right;
+
+}
+
+td {
+    /*Contenido de tabla*/
+    border-left-style: groove;
+    border-spacing: 5px;
+    padding: 20px;
+
+}
+
+.procesos {
+    /*titulo de procesos*/
+    border-bottom-style: groove;
+    border-width: 5px;
+
+}
+
+.listaTitulo {
+    /*Titulos de la lista de procesos*/
+    font-family: bold;
+
+}
+
+.correo {
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.correo:hover {
+    color: #e9be3e;
+    -webkit-text-stroke: 0.4px black;
+
+}
+
+li {
+    /*Tipo de lista*/
+    list-style: none;
+}
+
+/*---------------------------- Form correo -------------------*/
+
+.sForm {
+    /*Seccion de form*/
+    display: grid;
+    /*se guardan los componentes dentro de una malla (filas y columnas)*/
+    grid-template-columns: repeat(2, 1fr);
+    /*Esta wea espesifica el numero de columnas y el tamaño de estas*/
+    padding: 20px;
+    
+}
+
+.form__goup {
+    /*Form para el correo electrónico*/
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    background-color: var(--principal);
+    bottom: 0;
+    
+}
+
+
+/*-------------------------------------Footer de página web -------------------------------------*/
+footer {
+    display: grid;
+    background-color: rgb(100, 100, 100);
+    width: 100%;
+    height: 120px;
+
+}
+
+.footerTitulo {
+    /*estilizado de contenido footer*/
+    color: antiquewhite;
+    width: max-content;
+    /*se establece el contenido máximo */
+    margin: 0;
+    padding: 0;
+    /*coloca margen */
+    padding-top: 25px;
+    padding-left: 10px;
+
+}
+
+.footerAño {
+    /*estilizado de footer*/
+    width: max-content;
+    color: antiquewhite;
+    /*color de texto*/
+    margin-left: 5%;
+
+}
