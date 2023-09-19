@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body{
+            margin: 0;
+        }
+        .login{
+            width: 100%;
+            height: 100%;
+            display: grid;  /*Para pode centrar los elementos de otra manera*/
+            place-items: center; /*centra los elementos al centro de la pantalla horizontalmente*/
+            
+        }
+        .form-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto; /*Coloca 3 filas con distintos tamaños*/
+            width: 300px; /*el ancho máximo del form*/
+        }
+        .logo
+    </style>
+
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img class="logo" src="" alt="logo">
+            <h1 class="title">Create a new password</h1>
+            <p class="subtitle">Enter a new password for you account</p>
+            <form class="form" action="/" >
+                <label class="label" for="pass">Password</label>
+                <input class="input-pass" type="password" id="pass" placeholder="*********">
+                
+                <label class="label" for="new-pass">Password</label>
+                <input class="input-pass" type="password" id="new-pass" placeholder="*********">
+
+                <input class="primary-button login-button" type="submit" value="confirm" >
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
