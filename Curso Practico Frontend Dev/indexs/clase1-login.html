@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!---------------------------fonts-------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 
     <style>
-        .body{
+        :root {
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        .body {
             margin: 0;
+            font-family: 'Quicksand', sans-serif;
         }
-        .login{
+
+        .login {
             width: 100%;
-            height: 100%;
-            display: grid;  /*Para pode centrar los elementos de otra manera*/
-            place-items: center; /*centra los elementos al centro de la pantalla horizontalmente*/
-            
-        }
-        .form-container{
+            height: 100vh;
+            /* representa el 100% de la altura disponible en la ventana del navegador.*/
             display: grid;
-            grid-template-rows: auto 1fr auto; /*Coloca 3 filas con distintos tamaños*/
-            width: 300px; /*el ancho máximo del form*/
+            /*Para pode centrar los elementos de otra manera*/
+            place-items: center;
+            /*centra los elementos al centro de la pantalla horizontalmente*/
+
         }
-        .logo
+
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            /*Coloca 3 filas con distintos tamaños*/
+            width: 300px;
+            /*el ancho máximo del form*/
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 50px;
+            justify-self: center;
+            display: none;
+            /*para que aun no aparezca solo como movil*/
+        }
+        .title{
+            font-size: var(--lg);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        
     </style>
 
 </head>
+
 <body>
     <div class="login">
         <div class="form-container">
-            <img class="logo" src="" alt="logo">
+            <img class="logo" src="./images/logos/logo_yard_sale.svg" alt="logo">
             <h1 class="title">Create a new password</h1>
             <p class="subtitle">Enter a new password for you account</p>
-            <form class="form" action="/" >
+            <form class="form" action="/">
                 <label class="label" for="pass">Password</label>
                 <input class="input-pass" type="password" id="pass" placeholder="*********">
-                
+
                 <label class="label" for="new-pass">Password</label>
                 <input class="input-pass" type="password" id="new-pass" placeholder="*********">
 
-                <input class="primary-button login-button" type="submit" value="confirm" >
+                <input class="primary-button login-button" type="submit" value="confirm">
             </form>
         </div>
     </div>
-    
+
 </body>
+
 </html>
