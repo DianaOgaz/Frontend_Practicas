@@ -24,8 +24,8 @@
         }
 
         body {
-            margin: 0;
             font-family: 'Quicksand', sans-serif;
+            margin: 0;
         }
 
         .login {
@@ -41,12 +41,10 @@
 
         .form-container {
             display: grid;
-            font-family: 'Quicksand', sans-serif;
             grid-template-rows: auto 1fr auto;
             /*Coloca 3 filas con distintos tamaños*/
             width: 300px;
             /*el ancho máximo del form*/
-            justify-items: center;
         }
 
         .logo {
@@ -56,29 +54,38 @@
             display: none;
             /*para que aun no aparezca solo como movil*/
         }
-
-        .title {
+        .title{
             font-size: var(--lg);
-            margin-bottom: 12px;
-            text-align: center;
+            margin-bottom: 32px;
 
         }
-
-        .subtitle {
+        .subtitle{
             color: var(--very-light-pink);
             font-size: var(--md);
             font-weight: 300;
             margin-top: 0;
-            margin-bottom: 32px;
+            margin-bottom:32px ;
             text-align: center;
         }
-
-        .form {
+        .form{
             display: flex;
             flex-direction: column;
         }
-
-        .primary-button {
+        .label{
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            height: 32px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 32px;
+        }
+        .primary-button{
             background-color: var(--hospital-green);
             border: none;
             color: var(--white);
@@ -87,49 +94,28 @@
             font-size: var(--md);
             font-weight: bold;
             height: 50px;
+            margin-top: 36px;
+            border-radius: 8px;
         }
-
-        .login-button {
+        .login-button{
             margin-top: 14px;
             margin-bottom: 32px;
-            border-radius: 8px;
-
+            
         }
-
-        .email-image {
-            width: 132px;
-            height: 132px;
-            border-radius: 50%;
-            background-color: var(--text-input-field);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 24px;
-        }
-
-        .email-image img {
-            width: 80px;
-        }
-
-        .resend {
-            font-size: var(--sm);
-        }
-
-        .resend span {
-            color: var(--very-light-pink);
-
-        }
-
-        .resend a {
-            color: var(--hospital-green);
-            text-decoration: none;
-        }
-
         @media (max-width: 640px) {
-            .logo {
+            .logo{
                 display: block;
             }
+            .primary-button{
+                position: absolute;
+                bottom: 0;
+                width: 300px;
+                margin-bottom: 24px;
+            }
         }
+
+
+        
     </style>
 
 </head>
@@ -137,19 +123,20 @@
 <body>
     <div class="login">
         <div class="form-container">
-            <img class="logo" src="./images/logos/logo_yard_sale.svg" alt="logo">
-            <h1 class="title">Email has been sent!</h1>
-            <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
+            <h1 class="title">My account</h1>
 
-            <div class="email-image">
-                <img src="./images/icons/email.svg" alt="email">
-            </div>
-            <input class="primary-button login-button" type="submit" value="Login">
-            <p class="resend">
-                <span>Didn't receive the email?</span>
-                <a href="/">Resend</a>
-            </p>
+            <form class="form" action="/">
+                <label class="label" for="name">Name</label>
+                <input class="input name" type="text" id="name" placeholder="Camila Yokoo">
 
+                <label class="label" for="email">Email address</label>
+                <input class="input email" type="text" id="email" placeholder="camilayokoo@gmail.com">
+
+                <label class="label" for="new-pass">Password</label>
+                <input class="input pass" type="password" id="new-pass" placeholder="*********">
+
+                <input class="primary-button create-button" type="submit" value="Create">
+            </form>
         </div>
     </div>
 
