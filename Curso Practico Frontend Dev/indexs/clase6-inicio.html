@@ -2,7 +2,12 @@
 <html lang="en">
 
 <head>
+    <!---------------------------fonts-------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -27,6 +32,9 @@
         display: grid;
         /*Repite las columnas según el ancho de la pantalla y el segundo define el tamaño de las columnas*/
         grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        /*Sirve para separar los componentes del grid*/
+        place-content: center;
     }
 
     .product-card {
@@ -34,7 +42,8 @@
     }
 
     .product-card img {
-
+        width: 240px;
+        height: 240px;
         border-radius: 20px;
         object-fit: cover;
         /*La imagen va a tener el tamaño adecuado para el div sin deformar la  imagen*/
@@ -46,6 +55,8 @@
         /*Coloca espacio entere los elementos*/
         align-items: center;
         /*centra los elementos de manera vertical*/
+        margin-bottom: 8px;
+        margin-top: 0;
     }
 
     .product-info figure img {
@@ -53,8 +64,41 @@
         height: 36px;
     }
 
+    .product-img {}
+
     figure {
         margin: 0;
+    }
+    .product-info div p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+    }
+    .product-info div p:nth-child(2){
+        font-size: var(--sm);
+        margin-top: 0px;
+        margin-bottom: 0px;;
+        color: var(--very-light-pink);
+    }
+
+    @media (max-width: 640px) {
+
+
+        .cards-container {
+            grid-template-columns: repeat(auto-fill, 140px);
+
+        }
+
+        .product-card {
+            width: 240px;
+        }
+
+        .product-card img {
+            width: 240px;
+            height: 240px;
+        }
+
+
     }
 </style>
 
@@ -76,274 +120,356 @@
 
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat1.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat2.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat3.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat4" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat5" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat1.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
+
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat2.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat3.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat4" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat5" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat1.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat2.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat3.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat4" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat5" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat1.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat2.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat3.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat4" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat5" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat1.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat2.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat3.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat4" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.sv" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat5" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat1.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_add_to_cart.svg" alt="">
-                </figure>
             </div>
             <div class="product-card">
-                <img class="product-img" src="./images/images/kitty.jpg" alt="">
-                <div>
-                    <p>$120,00</p>
-                    <p>Wea fome</p>
+                <img class="product-img" src="./images/images/cat2.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Wea fome</p>
+                    </div>
+                    <figure>
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
                 </div>
-                <figure>
-                    <img src="./images/icons/bt_added_to_cart.svg" alt="">
-                </figure>
             </div>
 
         </div><!--Contenedor-->
